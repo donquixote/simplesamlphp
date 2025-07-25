@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "155a6f7525c20672fde2e6b37a40b75f",
+    "content-hash": "5596f3d55d86d31bf194695f5c18d9eb",
     "packages": [
         {
             "name": "gettext/gettext",
@@ -1262,13 +1262,13 @@
             "version": "v1.24.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/simplesamlphp/xml-common.git",
-                "reference": "0521d7fa82ded0be994cf42e0365a4ac53c95789"
+                "url": "https://github.com/donquixote/xml-common.git",
+                "reference": "5d7043d279727d8fc52acfbd4ab456bb5dde8129"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplesamlphp/xml-common/zipball/0521d7fa82ded0be994cf42e0365a4ac53c95789",
-                "reference": "0521d7fa82ded0be994cf42e0365a4ac53c95789",
+                "url": "https://api.github.com/repos/donquixote/xml-common/zipball/5d7043d279727d8fc52acfbd4ab456bb5dde8129",
+                "reference": "5d7043d279727d8fc52acfbd4ab456bb5dde8129",
                 "shasum": ""
             },
             "require": {
@@ -1281,7 +1281,7 @@
                 "php": "^8.1",
                 "simplesamlphp/assert": "~1.8.0",
                 "simplesamlphp/composer-xmlprovider-installer": "~1.0.0",
-                "symfony/finder": "^6.4"
+                "symfony/finder": "^6.4 || ^7.1"
             },
             "require-dev": {
                 "simplesamlphp/simplesamlphp-test-framework": "^1.7"
@@ -1292,7 +1292,14 @@
                     "SimpleSAML\\XML\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "SimpleSAML\\Test\\XML\\": [
+                        "tests/XML",
+                        "tests/Utils"
+                    ]
+                }
+            },
             "license": [
                 "LGPL-2.1-or-later"
             ],
@@ -1316,7 +1323,7 @@
                 "issues": "https://github.com/simplesamlphp/xml-common/issues",
                 "source": "https://github.com/simplesamlphp/xml-common"
             },
-            "time": "2025-01-12T10:33:16+00:00"
+            "time": "2025-07-25T10:18:39+00:00"
         },
         {
             "name": "simplesamlphp/xml-security",

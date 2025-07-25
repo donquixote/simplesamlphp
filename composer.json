@@ -127,6 +127,12 @@
             "dev-master": "2.5.0.x-dev"
         }
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/donquixote/xml-common"
+        }
+    ],
     "scripts": {
         "translations:unused": "./bin/translations translations:unused",
         "translations:update:translatable": "./bin/translations translations:update:translatable",
