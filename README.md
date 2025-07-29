@@ -1,7 +1,7 @@
 _This is a fork of the official repository, which supports Symfony 7._\
-_This means it is compatible with Drupal 11._\
+_This means it is compatible with Drupal 11._
 
-_The repository attempts to mirror the most recent upstream releases, with changes for Drupal 7 support._
+_The repository attempts to mirror the most recent upstream releases, with changes for Drupal 7 support._\
 _(This modified README is part of the master branch, which you can completely ignore.)_
 
 _To use this repository, put this in your project's composer.json:_
